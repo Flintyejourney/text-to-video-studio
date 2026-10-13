@@ -1,0 +1,26 @@
+# text-to-video-studio — default runtime config
+[host]
+name = "text-to-video-studio"
+version = "0.6.2"
+plugin_paths = ["plugins"]
+quarantine_dir = "runs/_quarantine"
+
+[render]
+default_backend = "mock_diffusion"
+default_width = 832
+default_height = 480
+default_fps = 24
+default_frames = 48
+seed = 6767
+device = "auto"          # auto | cuda | cpu | metal
+
+[queue]
+max_concurrent = 2
+retry_attempts = 3
+poll_interval_ms = 250
+
+[model_cache]
+root = "models_cache"
+max_gb = 40
+allow_remote = true
+mirror = "https://cdn.text-to-video-studio.dev/weights"
