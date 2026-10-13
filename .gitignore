@@ -1,0 +1,48 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Runtime artifacts
+runs/
+out/
+*.mp4
+*.webm
+*.gif
+*.png
+*.wav
+*.ckpt
+*.safetensors
+!tests/fixtures/*.json
+
+# Model cache (large)
+models_cache/
+weights/
+*.part
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local config overrides
+config/local.*.toml
+plugins/**/local.*.toml
